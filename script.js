@@ -11,12 +11,6 @@ function checkInputs() {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
 
-    // clears any pending error state
-    
-    
-    
-    
-
     if(fNameValue === "") {
         setErrorFor(fName, "Field cannot be blank");
     } else {
@@ -41,8 +35,6 @@ function checkInputs() {
         setClearErrorFor(password, "");
     }
 };
-
-
 
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
