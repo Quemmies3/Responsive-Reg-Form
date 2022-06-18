@@ -23,24 +23,32 @@
 
       <div class="container-fluid">
         <form id="form" action="#" method="post">
-          <input type="text" name="First_Name" placeholder="First Name" id="fName" class="input_field" required>
-          <span><img class="error_icon" src="img/icon-error.svg" alt="Error Icon"></span>
-          <small class="error">Error Message</small>
+          <div class="form-control">
+            <input type="text" name="First_Name" placeholder="First Name" id="fName">
+            <img class="error_icon" src="img/icon-error.svg" alt="Error Icon">
+            <small class="error">Error Message</small>
+          </div>
 
-          <input type="text" name="Last_Name" placeholder="Last Name" id="lName" class="input_field" required>
-          <span><img class="error_icon" src="img/icon-error.svg" alt="Error Icon"></span>
-          <small class="error">Error Message</small>
+          <div class="form-control">
+            <input type="text" name="Last_Name" placeholder="Last Name" id="lName" >
+            <img class="error_icon" src="img/icon-error.svg" alt="Error Icon">
+            <small class="error">Error Message</small>
+          </div>
 
-          <input type="text" name="Email" placeholder="Email Address" id="email" class="input_field" required>
-          <span><img class="error_icon" src="img/icon-error.svg" alt="Error Icon"></span>
-          <small class="error">Error Message</small>
+          <div class="form-control">
+            <input type="text" name="Email" placeholder="Email Address" id="email" >
+            <img class="error_icon" src="img/icon-error.svg" alt="Error Icon">
+            <small class="error">Error Message</small>
+          </div>
 
-          <input type="text" name="Password" placeholder="Password" id="password" class="input_field" required>
-          <span><img class="error_icon" src="img/icon-error.svg" alt="Error Icon"></span>
-          <small class="error">Error Message</small>
+          <div class="form-control">
+            <input type="password" name="Password" placeholder="Password" id="password" >
+            <img class="error_icon" src="img/icon-error.svg" alt="Error Icon">
+            <small class="error">Error Message</small>
+          </div>
 
           <div class="bottom_button">
-            <button type="submit" value="submit" id="submit">CLAIM YOUR FREE TRIAL</button>
+            <button type="submit" value="submit" id="submit" class="btn">CLAIM YOUR FREE TRIAL</button>
           </div>
 
           <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
@@ -48,6 +56,10 @@
       </div>
     </section>
   </main>
+  
+
+  <script src="script.js"></script>
+
   
 </body>
 </html>

@@ -10,8 +10,10 @@
 body {
     background: url('img/bg-intro-desktop.png') hsl(0, 100%, 74%) ;
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 20px;
+    margin: 0;
 }
 
 .hero-section {
@@ -58,20 +60,25 @@ section.container {
 
 form {
     background:hsl(0, 0%, 100%);
-    margin: 30px;
-    padding: 10px;
+    margin: 30px 45px 20px 30px;
+    padding: 15px 30px 0 10px;
     box-shadow: 0 5px 5px hsla(0, 0%, 100%, 0.);
     border-radius: 10px;
     width: 500px;
     text-align: center;
 }
 
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
 input {
-    width: 90%;
-    margin: 20px;
+    width: 100%;
+    margin: 12px;
     padding: 10px;
     border-radius: 5px;
-    outline: 0;
     border: 2px solid hsla(0, 4%, 78%, 0.944);
     display: block;
 }
@@ -82,8 +89,8 @@ input {
     background: hsl(154, 59%, 51%);
     border: 1px solid hsl(154, 59%, 51%);
     color: rgb(255, 255, 255);
-    width: 90%;
-    margin: 8px;
+    width: 100%;
+    margin: 10px;
 }
 
 .bottom_button button:hover{
@@ -102,13 +109,45 @@ input {
 
 .terms>a {
     color: hsl(0, 98%, 54%);
-    padding-bottom: 5px;
+    padding-bottom: 20px;
 }
 
-.error_icon, small {
-   display: none;
-    border: 1px solid hsl(0, 98%, 54%);
-    color: hsl(0, 98%, 54%);
+.form-control>img {
+    top: 10px; 
+    right: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+
+.form-control>small {
+    bottom: 0;
+    left: 10px;
+    font-style: italic;
+    position: absolute;
+    text-align: right;
+    visibility: hidden;
+}
+
+.form-control.error>input {
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.form-control.error>img {
+    color:  rgb(255, 0, 0);
+    visibility: visible;
+}
+
+.form-control.error>small {
+    color:  rgb(255, 0, 0);
+    visibility: visible;
+}
+
+.form-control>.error {
+    border: none;
+    display: inline-block;
+    padding: 3px;
+    width: 100%;
+    font-size: 11px;
 }
 
 @media screen and (max-width: 768px) {
