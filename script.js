@@ -5,6 +5,24 @@ const email = document.getElementById("email");
 const password = document.getElementById("password");
 const submit = document.getElementById("submit")
 
+
+fName.addEventListener("click", () => {
+    setClearErrorFor(fName);
+});
+
+lName.addEventListener("click", () => {
+    setClearErrorFor(lName);
+});
+
+email.addEventListener("click", () => {
+    setClearErrorFor(email);
+});
+
+password.addEventListener("click", () => {
+    setClearErrorFor(password);
+});
+
+
 function checkInputs() {
     const fNameValue = fName.value.trim();
     const lNameValue = lName.value.trim();
